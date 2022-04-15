@@ -3,6 +3,10 @@
 	src:url(JogosHTML5/jogo1/fontes/ANODETONOONE.TTF);
 }
 
+*{
+	font-family: 'Segoe UI', sans-serif;
+}
+
 h1 {
 	font-family:Titulo;
 	font-size:40px;
@@ -28,6 +32,22 @@ body {
 	background-image:url(JogosHTML5/jogo1/imgs/fundo_game.jpg);
 	border-color:#FFF;
 	border-style:solid;
+}
+
+#btt{
+	font-weight: 600;
+}
+
+#fundoGame #btt{
+	background-color: #d68a1e;
+	padding: 5px;
+	border-radius: 2px;
+	transition: .3s;
+}
+
+#fundoGame #btt:hover{
+	background-color: #603A03;
+	color: white;
 }
 
 #jogador {
@@ -73,11 +93,13 @@ background-image:url(JogosHTML5/jogo1/imgs/apache.png);
 	height:200px;
 	background-color:#FFF;
  	margin-left:auto;
-        margin-right:auto;
+    margin-right:auto;
  	margin-top:100px;
 	text-align:center;
 	padding:10px;
-
+	cursor: pointer;
+	border-radius: 5px;
+	box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.678);
 }
 
 #disparo {
@@ -121,6 +143,35 @@ h2 {
 	font-size:20px;
 	color:#FFF
 }
+
+#energia {
+	width: 140px;
+	height: 38px;
+	position: absolute;
+	left: 750px;
+	top: 7px;	
+}
+
+h3 {
+	font-family:Titulo;
+	font-size:20px;
+	color:#603A03;
+
+}
+
+#fim {
+	width:350px;
+	height:200px;
+	background-color:#FFF;
+ 	margin-left:auto;
+    margin-right:auto;
+ 	margin-top:100px;
+	text-align:center;
+	padding:10px;
+	cursor:pointer;
+
+}
+
 
 .anima1 {
 	background-image:url(JogosHTML5/jogo1/imgs/apache.png);
