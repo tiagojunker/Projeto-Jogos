@@ -1,5 +1,6 @@
 const yourShip = document.getElementsByClassName('player-shooter')[0];
 const playArea = document.getElementById('main-play-area');
+const objetosImg = ['shooter/machine.png', 'shooter/planet.png', 'shooter/fire-brock.png'];
 
 
 //Função movimento e disparo
@@ -71,8 +72,19 @@ function moveLaser(laser) {
     }, 10);
 }
 
+//função para criar inimigos(objetos) aleatórios
+function createObjects() {
+    let newObject = document.createElement('img');
+    let objectSprite = objetosImg[Math.floor(math.random() * objetosImg.length)]; //sorteio de imagem
+    newObject.src = objectSprite;
+    newObject.classList.add('obj');
+    newObject.classList.add('obj-transition');
+    newObject.style.left = `370px`;
+    newObject.style.top = `${math.floor(math.random() * 330) + 30}`;
+    playArea.appendChild(newObject);
+    moveObject();
 
-
+}
 
 
 window.addEventListener('keydown', flyShip); //função que ativa o teclado
