@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: cornflowerblue;
+}
+
+#main-play-area{
+    background-color: black;
+    background-image: url(shooter/space.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 800px;
+    height: 600px;
+}
+
+.player-shooter{
+    position: relative;
+    width: 80px;
+    left: 20px;
+    top: 250px;
+}
+
+.laser {
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
