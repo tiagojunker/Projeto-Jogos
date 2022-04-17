@@ -22,6 +22,23 @@ body{
     height: 600px;
 }
 
+.game-instructions{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: white;
+    font-size: 20pt;
+}
+
+.start-button{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: white;
+    cursor: pointer;
+    background-color: rgb(38, 7, 66);
+}
+
 .player-shooter{
     position: relative;
     width: 80px;
@@ -33,4 +50,22 @@ body{
     position: relative;
     width: 30px;
     height: 30px;
+}
+
+.obj{
+    height: 50px;
+    width: 70px;
+    position: relative;
+}
+
+.obj-transition {
+    opacity: 1;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.dead-alien {
+    height: 60px;
+    width: 70px;
+    position: relative;
+    opacity: 0;
 }
