@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+.dino{
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1px;
+    position: absolute;
+    bottom: 0;
+}
+
+.cactus{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    bottom: 0;
+    margin-bottom: 1px;
+}
